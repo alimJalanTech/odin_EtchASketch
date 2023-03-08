@@ -1,8 +1,8 @@
 .board {
     display: grid;
     height: 400px;
-    width: 400px;
     margin: 10px;
+    width: 400px;
 }
 
 
@@ -11,16 +11,14 @@ body {
 }
 
 button {
-    position: relative;
     background: #444;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
     border: none;
-    letter-spacing: 0.1rem;
+    color: #fff;
     font-size: 1rem;
+    letter-spacing: 0.1rem;
     padding: 1rem 3rem;
-    transition: 0.2s;
+    position: relative;
+    text-transform: uppercase;
   }
 
 .content {
@@ -30,21 +28,21 @@ button {
 }
 
 input {
-    position: relative;
     background: #fff;
+    border: none;
     color: #000;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 3rem;
+    position: relative;
     text-decoration:solid;
     text-transform: uppercase;
-    border: none;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    padding: 1rem 3rem;
     transition: 0.2s;
 }
 
 .title {
-    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
     font-style: bold;
+    text-align: center;
 }
