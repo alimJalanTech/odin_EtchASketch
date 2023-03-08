@@ -2,13 +2,13 @@ const colors = ["blue", "green", "orange", "yellow", "red", "cyan"];
 let color = "black";
 
 function populateBoard(size) {
+  //Design the sketch board
   const board = document.querySelector(".board");
-
-  const squares = board.querySelectorAll("div");
-  squares.forEach((div) => div.remove());
+  board.querySelectorAll("div").forEach((div) => div.remove()); 
   board.style.gridTemplateColumns = `repeat(${size},1fr)`;
   board.style.gridTemplateRows = `repeat(${size},1fr)`;
 
+  // Logic to fill up the sketch board
   const amount = size * size;
   for (let i = 0; i < amount; i++) {
     const square = document.createElement("div");
