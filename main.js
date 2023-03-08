@@ -37,4 +37,5 @@ function generateRandom() {
 function changeColor(choice) {
   color = choice;
 }
+
 populateBoard(16);
