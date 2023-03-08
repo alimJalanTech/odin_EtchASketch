@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="original.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="original.css" />
   </head>
   <body>
     <div class="flex-contain">
       <div class="title"><h1>Sketch Pad</h1></div>
       <div class="content">
-        <div class="board"></div><br>
+        <div class="board"></div>
+        <br />
 
-          <div class="buttons">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('white')">Eraser</button>
-            <button  onclick="changeColor(generateRandom())">Random</button>
-            <button onclick="populateBoard(16)">Reset</button>
-          </div>
-          <div>
-            <input type="text" 
-            placeholder="Board" 
-            value="16" 
-            onchange=changeSize(this.value)>
-            <button>Size of Grid</button>
-          </div>
+        <div class="buttons">
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('white')">Eraser</button>
+          <button onclick="changeColor(generateRandom())">Random</button>
+          <button onclick="populateBoard(16)">Reset</button>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Board"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button>Size of Grid</button>
+        </div>
       </div>
     </div>
   </body>
