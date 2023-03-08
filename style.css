@@ -1,7 +1,8 @@
 .board {
     display: grid;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
 }
 
 
@@ -9,8 +10,41 @@ body {
     background-color: antiquewhite;
 }
 
+button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+  }
+
 .content {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+input {
+    position: relative;
+    background: #fff;
+    color: #000;
+    text-decoration:solid;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+}
+
+.title {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-style: bold;
 }
